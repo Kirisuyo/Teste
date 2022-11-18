@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://drive.google.com/uc?id=1tvZaM3ocEFCiwsexcaU0Ox1B5fcf_Wu4">
+    <link href="https://drive.google.com/uc?id=107sBDMSVjXnLmwBxrF_Khc9oyIKTmuGM">
+    <link href="https://drive.google.com/uc?id=1Q-0QhnwuKPMpTDIMBFsM3CQeUnw99jfS">
+    <style>
+        .container{
+            display:grid;
+            grid-auto-flow: column;
+            grid-auto-columns: 1fr;
+            width: 700px;
+            background: #FF4341;
+        }
+        #moradiaDigna{
+            width: 100%;
+            float: left;
+            border: transparent thin solid;
+            padding: 5px 0px 0px 0px;
+            margin: 20px 25px 5px 15px;
+            max-width: 130px;
+        }
+        #rendaMarituba{
+            width: 100%;
+            float: right;
+            border: transparent thin solid;
+            padding: 5px 0px 0px 0px;
+            margin: 0px 10px 0px 70px;
+            max-width: 130px;            
+        }
+        .corpoEmail{
+            text-align: center;
+            margin-top: 30px;
+            margin-right: 650px;
+        }
+        h1{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 35px;
+            line-height: 43px;
+            color: #000000;
+        }
+        p {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="navtop">
+        <div id="moradiaDigna">
+            <img src="Template Renda-Moradia/moradia.svg">
+        </div>    
+        <div id="rendaMarituba">
+            <img src="Template Renda-Moradia/renda.svg">
+        </div>
+    </div>
+    <div class="corpoEmail">
+        <img src="Template Renda-Moradia/senha.svg">
+        <h1>Olá ${participante.email}</h1>
+        <p>Conforme solicitado, a senha do seu cartão foi<br>
+        foi resetada com sucesso, segue os dados atualizados:
+        </p>
+        <p><strong>N° do cartão:${cartao.numeroFormatado}</strong><br></p>
+        <p><strong>Senha:${cartao.senha}</strong></p>
+    </div>
+</body>
+</html>
